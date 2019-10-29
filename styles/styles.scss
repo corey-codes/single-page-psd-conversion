@@ -1,0 +1,372 @@
+// PARTIALS ===========================
+
+@import "./partials/setup";
+@import "./partials/skip-link";
+@import "./partials/visually-hidden";
+
+// VARIABLES ==============================
+
+$color-1: #201E21;  /* (2, 30, 33) */
+$color-2: #0178A5;  /* (1, 120, 165) */
+$color-3: #A7059B;  /* (167, 5, 155) */
+$color-4: #FFE9E9;  /* (255, 233, 233) */
+$color-5: #F7DAE8;  /* (247, 218, 232) */
+
+$font-1: 'East Sea Dokdo';
+$font-2: 'Roboto';
+
+// GENERAL BODY FORMAT =====================
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'East Sea Dokdo', cursive; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+// STANDARD STYLES =========================
+
+.background-1 {
+    background-color: $color-4;
+}
+
+.background-2 {
+    background-color: $color-5;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2, 
+h3 {
+    font-family: $font-1;
+    margin: 0;
+}
+
+h2, 
+h3 {
+    line-height: 3.6rem;
+}
+
+h1 {
+    font-size: 12.2rem;
+    line-height: 9.43rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 7.5rem;
+   
+}
+
+h3 {
+    font-size: 5.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+a,
+input.email-address,
+::placeholder,
+legend {
+    color: $color-1;
+    font-family: $font-2;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.02rem;
+}
+
+a:hover {
+        color: $color-2;
+    }
+
+.button-1,
+.button-2 {
+   
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.button-1 a,
+.button-2 a,
+button {
+    font-family: $font-1;
+    font-size: 4.5rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+
+}
+
+.button-1 {
+    background-color: $color-2;
+}
+
+.button-1:hover {
+    background-color: $color-3;
+}
+
+.button-2 {
+    background-color: $color-3;
+}
+
+.button-2:hover {
+    background-color: $color-2;
+}
+
+button {
+    border: none;
+    margin: 0;
+}
+
+ul {
+    padding-left: 0px;
+} 
+
+li {
+    list-style: none;
+}
+
+i {
+    font-size: 5rem;
+    color: $color-2;
+}
+
+i:hover {
+        color: $color-3;
+    }
+
+
+
+// HEADER ========================
+
+header {
+    background-image: url(../assets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+// NAV =============================
+
+nav li {
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    margin-right: 25px;
+    position: relative;
+}
+
+.nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: $color-3;
+   
+}
+
+.title h1 {
+    margin: 10% 0; 
+    animation-duration: 1.3s;
+    animation-delay: 0.3s; 
+}
+
+// NEW PRODUCTS =======================
+
+.new-products {
+    padding: 80px 0;
+
+    img {
+        float: left;
+        margin-right: 35px;
+        width: calc(30% - 35px);
+        height: 100%;
+    }
+
+    .new-products-copy {
+        display: inline-block;
+        width: 70%; 
+    }
+
+}
+
+
+
+// LATEST EXHIBITS ========================
+
+.latest-exhibits {
+    padding: 80px 0;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        text-transform: lowercase;
+    }
+
+
+}
+
+.exhibits img {
+    float: left;
+    width: calc((100% - 60px) / 3);
+    
+}
+
+.exhibits img:nth-of-type(2) {
+    margin: 0 30px;
+}
+
+// ABOUT ==========================
+
+.about {
+    padding: 80px 0;
+    
+}
+
+.catologue, 
+.events, 
+.colabs {
+    float: left;
+    padding: 10px;
+    width: calc(100%  / 3);
+    text-align: center;
+}
+
+// BLOG ===========================
+
+.blog-post-1-image,
+.blog-post-1-copy {
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+
+.blog-post-2-image,
+.blog-post-2-copy {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.blog-post-1-copy {
+    padding: 80px 75px 5px 0px;
+}
+
+.blog-post-2-copy {
+    padding: 75px 0px 5px 80px;
+
+}
+
+// FOOTER ==============================
+
+footer {
+    padding: 80px 0;
+}
+
+.footer-links,
+.email,
+.contact {
+    float: left;
+}
+
+.footer-links {
+    width: 20%;
+}
+
+.email {
+    width: 53%;
+    text-align: center;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    legend {
+        // margin: 0 auto;
+        margin-bottom: 15px;
+        
+    }
+
+    input.email-address {
+        padding: 10px;
+        font-family: $font-2;
+        border: none;
+        width: 70%;
+        float: left;
+        margin: 0;
+    }
+
+    .sub-button {
+        float: left;
+        width: 30%;
+    }
+}
+
+.contact {
+    width: 27%;
+    text-align: right; 
+    
+    p {
+    margin: 0;
+    }
+}
+
+
+// SUB-FOOTER =======================
+
+.sub-footer {
+    background-color: $color-1;
+    text-align: center;
+    padding: 20px 0;
+
+    p {
+        color: white;
+        margin: 0;
+    }
+   
+}
+
+// MEDIA QUERIES =================
+
+@import "./partials/media-queries";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

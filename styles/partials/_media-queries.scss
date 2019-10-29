@@ -1,0 +1,157 @@
+// MAX-WIDTH 1100PX =====================
+
+@media (max-width: 1140px) {
+    h1 {
+        font-size: 11rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    p,
+    a,
+    input.email-address {
+        font-size: 1.5rem;
+    }
+
+    .button-1 a,
+    .button-2 a,
+    button {
+        font-size: 3rem;
+    }
+
+}
+
+// MAX-WIDTH 995PX =========================
+
+@media (max-width: 995px) {
+    .blog-post-1-copy {
+        padding: 60px 60px 5px 0px;
+    }
+
+.blog-post-2-copy {
+        padding: 60px 0px 5px 60px;
+
+    }
+
+}
+
+
+// MAX-WIDTH 960PX =========================
+
+@media (max-width: 960px) {
+    .new-products {
+        
+        img,
+        .new-products-copy {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        
+        img {
+            float: none;
+            // display: block;
+            margin: 0 auto;
+        }
+
+        .new-products-copy {
+            width: 100%;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .read-more {
+        text-align: center;
+            margin: 0 auto;   
+        }
+
+    }
+    
+    .blog-post-1 {
+        padding: 80px 5px 20px 5px;
+    }
+    
+    
+    .blog-post-2 {
+        padding: 20px 5px 80px 5px;
+    }
+
+    .blog-post-1-image,
+    .blog-post-1-copy,
+    .blog-post-2-image,
+    .blog-post-2-copy {
+        display: block;
+        float: none;
+        margin: 0 auto;    
+    }
+
+    .blog-post-1-copy,
+    .blog-post-2-copy {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 20px 5px;
+    }
+}
+
+// MAX-WIDTH 850PX ========================
+
+@media (max-width: 885px) {
+    
+    .footer-links,
+    .email,
+    .contact {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links li {
+        display: inline-block;
+        margin: 10px 10px;
+    }
+  
+    .email { 
+        input.email-address {
+            float: none;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .sub-button {
+            float: none;
+        }
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
