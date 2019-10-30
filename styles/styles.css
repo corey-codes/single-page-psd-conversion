@@ -379,6 +379,13 @@ i:hover {
   color: #A7059B;
 }
 
+.new-products,
+.latest-exhibits,
+.about,
+footer {
+  padding: 80px 0;
+}
+
 header {
   background-image: url("/assets/rsz_header-image.jpg");
   background-repeat: no-repeat;
@@ -394,7 +401,7 @@ ul.nav-links {
 nav li {
   display: inline-block;
   padding: 10px 0 10px 0;
-  margin-right: 25px;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -430,10 +437,6 @@ i.hamburger {
           animation-delay: 0.3s;
 }
 
-.new-products {
-  padding: 80px 0;
-}
-
 .new-products img {
   float: left;
   margin-right: 35px;
@@ -444,10 +447,6 @@ i.hamburger {
 .new-products .new-products-copy {
   display: inline-block;
   width: 70%;
-}
-
-.latest-exhibits {
-  padding: 80px 0;
 }
 
 .latest-exhibits h2 {
@@ -463,10 +462,6 @@ i.hamburger {
 
 .exhibits img:nth-of-type(2) {
   margin: 0 30px;
-}
-
-.about {
-  padding: 80px 0;
 }
 
 .about .catologue,
@@ -498,10 +493,6 @@ i.hamburger {
 
 .blog-post-2-copy {
   padding: 75px 0px 5px 80px;
-}
-
-footer {
-  padding: 80px 0;
 }
 
 .footer-links,
@@ -559,6 +550,39 @@ footer {
 .sub-footer p {
   color: white;
   margin: 0;
+}
+
+@media (max-width: 3840px) and (min-height: 2160px) {
+  html {
+    font-size: 170%;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
+  header {
+    height: 80vh;
+  }
+  .new-products,
+  .latest-exhibits,
+  .about,
+  footer {
+    padding: 240px 0;
+  }
+  .blog-post-1-copy {
+    padding: 240px 150px 10px 0px;
+  }
+  .blog-post-2-copy {
+    padding: 240px 0px 5px 150px;
+  }
+}
+
+@media (max-width: 2900px) and (min-height: 2160px) {
+  html {
+    font-size: 150%;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 1120px) and (min-height: 1000px) {

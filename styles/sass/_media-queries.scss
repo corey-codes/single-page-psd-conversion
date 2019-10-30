@@ -1,6 +1,50 @@
 // MEDIA QUERIES ===============
 
-// TAKE OFF ANIMATE CSS
+
+// MAX-WIDTH 3840PX ==========================
+
+@media (max-width: 3840px) and (min-height: 2160px) {
+    html {
+        font-size: 170%;
+    }
+    
+    .wrapper {
+        max-width: 90%; 
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .new-products,
+    .latest-exhibits,
+    .about,
+    footer {
+        padding: 240px 0;
+    }
+
+    .blog-post-1-copy {
+        padding: 240px 150px 10px 0px;
+    }
+
+    .blog-post-2-copy {
+        padding: 240px 0px 5px 150px;
+    }
+}
+
+
+// MAX-WIDTH 2900PX ==========================
+
+@media (max-width: 2900px) and (min-height: 2160px) {
+    html {
+        font-size: 150%;
+    }
+    
+    .wrapper {
+        max-width: 90%; 
+    }
+
+}
 
 // MAX-WIDTH 1120PX ==========================
 

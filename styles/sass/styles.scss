@@ -151,6 +151,15 @@ i:hover {
         color: $color-3;
     }
 
+// GENERAL SECTION PADDING ================
+
+.new-products,
+.latest-exhibits,
+.about,
+footer {
+    padding: 80px 0;
+}
+
 
 
 // HEADER ========================
@@ -172,7 +181,7 @@ ul.nav-links {
 nav li {
     display: inline-block;
     padding: 10px 0 10px 0;
-    margin-right: 25px;
+    margin-right: 50px;
     position: relative;
 }
 
@@ -211,7 +220,6 @@ i.hamburger {
 // NEW PRODUCTS =======================
 
 .new-products {
-    padding: 80px 0;
 
     img {
         float: left;
@@ -232,7 +240,6 @@ i.hamburger {
 // LATEST EXHIBITS ========================
 
 .latest-exhibits {
-    padding: 80px 0;
 
     h2 {
         text-align: center;
@@ -254,7 +261,6 @@ i.hamburger {
 // ABOUT ==========================
 
 .about {
-    padding: 80px 0;
     
     .catologue, 
     .events, 
@@ -295,9 +301,6 @@ i.hamburger {
 
 // FOOTER ==============================
 
-footer {
-    padding: 80px 0;
-}
 
 .footer-links,
 .email,
