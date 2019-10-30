@@ -156,7 +156,7 @@ i:hover {
 // HEADER ========================
 
 header {
-    background-image: url(../assets/header-image.jpg);
+    background-image: url("/assets/rsz_header-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -186,17 +186,24 @@ nav li {
     background-color: $color-3;
    
 }
-// THIS ONE WORKS
-// i.hamburger {
-//     display: inline-block;
-//     // position: absolute;
-//     // top: 0;
-//     // right: 0;
-//     margin: 10px;
-// }
 
-.title h1 {
-    margin: 10% 0; 
+i.hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.header-title { 
+    // padding: 160px 0 10px 0;
+    padding: 10% 0 10% 0;
+    display: inline-block;
     animation-duration: 1.3s;
     animation-delay: 0.3s; 
 }
@@ -232,8 +239,6 @@ nav li {
         margin-bottom: 50px;
         text-transform: lowercase;
     }
-
-
 }
 
 .exhibits img {
@@ -251,16 +256,17 @@ nav li {
 .about {
     padding: 80px 0;
     
+    .catologue, 
+    .events, 
+    .colabs {
+        float: left;
+        padding: 10px;
+        width: calc(100%  / 3);
+        text-align: center;
+    }
+    
 }
 
-.catologue, 
-.events, 
-.colabs {
-    float: left;
-    padding: 10px;
-    width: calc(100%  / 3);
-    text-align: center;
-}
 
 // BLOG ===========================
 

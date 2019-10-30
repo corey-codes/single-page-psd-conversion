@@ -380,7 +380,7 @@ i:hover {
 }
 
 header {
-  background-image: url(../assets/header-image.jpg);
+  background-image: url("/assets/rsz_header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -408,8 +408,22 @@ nav li {
   background-color: #A7059B;
 }
 
-.title h1 {
-  margin: 10% 0;
+i.hamburger {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.header-title {
+  padding: 10% 0 10% 0;
+  display: inline-block;
   -webkit-animation-duration: 1.3s;
           animation-duration: 1.3s;
   -webkit-animation-delay: 0.3s;
@@ -455,9 +469,9 @@ nav li {
   padding: 80px 0;
 }
 
-.catologue,
-.events,
-.colabs {
+.about .catologue,
+.about .events,
+.about .colabs {
   float: left;
   padding: 10px;
   width: calc(100%  / 3);
@@ -547,7 +561,15 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1120px) and (min-height: 1000px) {
+  header {
+    background-position: center;
+    background-attachment: initial;
+    height: 90vh;
+  }
+  header .header-title {
+    padding: 30% 0 10% 0;
+  }
   h1 {
     font-size: 11rem;
   }
@@ -562,44 +584,28 @@ footer {
   input.email-address,
   ::-webkit-input-placeholder,
   legend {
-    color: #201E21;
-    font-family: "Roboto";
-    font-size: 1.5rem;
-    line-height: 2.9rem;
-    letter-spacing: 0.02rem;
+    font-size: 1.6rem;
   }
   p,
   a,
   input.email-address,
   :-ms-input-placeholder,
   legend {
-    color: #201E21;
-    font-family: "Roboto";
-    font-size: 1.5rem;
-    line-height: 2.9rem;
-    letter-spacing: 0.02rem;
+    font-size: 1.6rem;
   }
   p,
   a,
   input.email-address,
   ::-ms-input-placeholder,
   legend {
-    color: #201E21;
-    font-family: "Roboto";
-    font-size: 1.5rem;
-    line-height: 2.9rem;
-    letter-spacing: 0.02rem;
+    font-size: 1.6rem;
   }
   p,
   a,
   input.email-address,
   ::placeholder,
   legend {
-    color: #201E21;
-    font-family: "Roboto";
-    font-size: 1.5rem;
-    line-height: 2.9rem;
-    letter-spacing: 0.02rem;
+    font-size: 1.6rem;
   }
   .button-1 a,
   .button-2 a,
@@ -609,13 +615,17 @@ footer {
 }
 
 @media (max-width: 990px) {
+  .new-products {
+    text-align: center;
+  }
   .new-products img,
   .new-products .new-products-copy {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
   }
   .new-products img {
     float: none;
+    width: auto;
+    margin: 0;
   }
   .new-products .new-products-copy {
     width: 100%;
@@ -649,7 +659,22 @@ footer {
   }
 }
 
+@media (max-width: 885px) and (min-height: 1000px) {
+  header {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 885px) {
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
   .footer-links,
   .email,
   .contact {
@@ -679,11 +704,113 @@ footer {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) and (min-height: 1000px) {
+  header {
+    height: 60vh;
+  }
+  header .header-title {
+    width: 65%;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 660px) {
+  .animated {
+    -webkit-animation: none;
+            animation: none;
+  }
   .nav-links {
     display: none;
   }
+  .mobile-menu {
+    display: inline-block;
+  }
+  i.hamburger {
+    font-size: 3rem;
+  }
+  .new-products .new-products-copy {
+    text-align: left;
+  }
+  .exhibits img.exhibit-2 {
+    display: none;
+  }
+  .exhibits img:nth-child(1) {
+    margin-right: 10px;
+  }
+  .exhibits img {
+    width: calc((100% - 10px) / 2);
+  }
+  .about i {
+    padding-bottom: 15px;
+  }
+  .about .catologue,
+  .about .events,
+  .about .colabs {
+    float: none;
+    display: block;
+    padding: 15px 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
   .sub-footer {
     padding: 5px 0;
+  }
+}
+
+@media (max-width: 320px) and (min-height: 600px) {
+  header {
+    height: 40vh;
+  }
+  header .animated {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 7rem;
+    line-height: 8.43rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p,
+  a,
+  input.email-address,
+  ::-webkit-input-placeholder,
+  legend {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  p,
+  a,
+  input.email-address,
+  :-ms-input-placeholder,
+  legend {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  p,
+  a,
+  input.email-address,
+  ::-ms-input-placeholder,
+  legend {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  p,
+  a,
+  input.email-address,
+  ::placeholder,
+  legend {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .new-products img {
+    width: 90%;
   }
 }

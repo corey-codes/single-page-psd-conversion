@@ -1,62 +1,70 @@
 // MEDIA QUERIES ===============
 
-// RESPONSIVE BACKGROUND IMAGE MAY NEED TO BE RESIZED
-// BACKGROUND IMAGE PROBABLY NEED @MIN/MAX SCREEN SIZE CSS
 // TAKE OFF ANIMATE CSS
-// NEED TO TAKE INTO ACCOUNT HEIGHT AND ORIENTATION MEDIA QUERIES
-// HIDE NAV MENU INSERT HANBURGER MENU
-
-
 
 // MAX-WIDTH 1120PX ==========================
 
-@media (max-width: 1120px) { 
-        h1 {
-            font-size: 11rem;
+@media (max-width: 1120px) and (min-height: 1000px) {
+    header {
+        background-position: center;
+        background-attachment: initial;
+        height: 90vh; 
+        
+        .header-title {
+            padding: 30% 0 10% 0;
         }
+    }
+ 
+    h1 {
+        font-size: 11rem;
+    }
 
-        h2 {
-            font-size: 6rem;
-        }
+    h2 {
+        font-size: 6rem;
+    }
 
-        h3 {
-            font-size: 4rem;
-        }
+    h3 {
+        font-size: 4rem;
+    }
 
-        p,
-        a,
-        input.email-address,
-        ::placeholder,
-        legend {
-            color: $color-1;
-            font-family: $font-2;
-            font-size: 1.5rem;
-            line-height: 2.9rem;
-            letter-spacing: 0.02rem;
-        }
+    p,
+    a,
+    input.email-address,
+    ::placeholder,
+    legend {
+         font-size: 1.6rem;
+    }
 
-        .button-1 a,
-        .button-2 a,
-        button {
-            font-size: 3rem;
-        }
-
+    .button-1 a,
+    .button-2 a,
+    button {
+        font-size: 3rem;
+    }
 }
 
 // MAX-WIDTH 990PX ====================
 
 @media (max-width: 990px) {
+    // header {
+    //     .animated {
+    //         animation: static;
+    //         animation-duration: 0;
+    //         animation-delay: 0;
+    //     }
+    // }
 
     .new-products {
-        
+        text-align: center;
+
         img,
         .new-products-copy {
-            display: block;
-            margin: 0 auto; 
+            display: inline-block;
         }       
         
         img {
             float: none;
+            width: auto;
+            margin: 0;
         }
 
         .new-products-copy {
@@ -99,9 +107,27 @@
     }
 }
 
-// MAX-WIDTH 885 PX ===============
+// MAX-WIDTH 885PX ===============
+
+@media (max-width: 885px) and (min-height: 1000px) {
+    header {
+        height: 70vh; 
+    }
+}
 
 @media (max-width: 885px) {
+    h1 {
+        font-size: 9rem;
+        }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+    
     .footer-links,
     .email,
     .contact {
@@ -138,16 +164,71 @@
     }
 }
 
-// MAX-WIDTH 650PX ======================
+// MAX-WIDTH 660PX ======================
 
-@media (max-width: 650px) {
+@media (max-width: 660px) and (min-height: 1000px) {
+    header {
+        height: 60vh; 
+        
+        .header-title {
+            width: 65%;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    
+    .animated {
+        animation: none;
+    }
+
     .nav-links{
         display: none;
     }
-    
-    .exhibits img {
 
+    .mobile-menu {
+        display: inline-block;
     }
+
+    i.hamburger {
+        font-size: 3rem;
+    }
+
+    .new-products .new-products-copy {
+        text-align: left;
+    }
+    
+    .exhibits {
+        img.exhibit-2 {
+            display: none;
+        }
+
+        img:nth-child(1) {
+            margin-right: 10px;
+        }
+
+        img {
+            width: calc((100% - 10px) / 2);
+        }
+    }
+
+    .about  {
+
+        i {
+            padding-bottom: 15px;
+        }
+        .catologue, 
+        .events, 
+        .colabs {
+            float: none;
+            display: block;
+            padding: 15px 0px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
 
     .sub-footer {
         padding: 5px 0;
@@ -156,15 +237,44 @@
 }
 
 
-
-
-
-
 // MAX-WIDTH 320PX =======================
 
+@media (max-width: 320px) and (min-height: 600px) {
+    header {
+        height: 40vh; 
+        
+        .animated {
+            animation: none;
+        }
+    }
+
+}
+
 @media (max-width: 320px) {
+    h1 {
+        font-size: 7rem;
+        line-height: 8.43rem;
+    }
 
+    h2 {
+        font-size: 4rem;
+    
+    }
 
+    h3 {
+        font-size: 3rem;
+    }
 
+    p,
+    a,
+    input.email-address,
+    ::placeholder,
+    legend {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
 
+    .new-products img {
+        width: 90%; 
+    }
 }
