@@ -560,6 +560,8 @@ i.hamburger {
     max-width: 90%;
   }
   header {
+    background-position: center;
+    background-attachment: initial;
     height: 80vh;
   }
   .new-products,
@@ -567,6 +569,10 @@ i.hamburger {
   .about,
   footer {
     padding: 240px 0;
+  }
+  .new-products img {
+    margin-right: 80px;
+    width: calc(30% - 80px);
   }
   .blog-post-1-copy {
     padding: 240px 150px 10px 0px;
@@ -576,12 +582,28 @@ i.hamburger {
   }
 }
 
-@media (max-width: 2900px) and (min-height: 2160px) {
+@media (max-width: 2900px) and (min-height: 1800px) {
   html {
     font-size: 150%;
   }
   .wrapper {
     max-width: 90%;
+  }
+  .new-products,
+  .latest-exhibits,
+  .about,
+  footer {
+    padding: 200px 0;
+  }
+  .new-products img {
+    margin-right: 80px;
+    width: calc(30% - 80px);
+  }
+  .blog-post-1-copy {
+    padding: 200px 150px 10px 0px;
+  }
+  .blog-post-2-copy {
+    padding: 200px 0px 5px 150px;
   }
 }
 
@@ -639,6 +661,10 @@ i.hamburger {
 }
 
 @media (max-width: 990px) {
+  header .animated {
+    -webkit-animation: none;
+            animation: none;
+  }
   .new-products {
     text-align: center;
   }

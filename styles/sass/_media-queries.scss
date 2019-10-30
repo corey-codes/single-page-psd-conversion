@@ -13,7 +13,9 @@
     }
 
     header {
-        height: 80vh;
+        background-position: center;
+        background-attachment: initial;
+        height: 80vh; 
     }
 
     .new-products,
@@ -22,6 +24,13 @@
     footer {
         padding: 240px 0;
     }
+
+    .new-products {
+        img {
+            margin-right: 80px;
+            width: calc(30% - 80px);
+        }
+    }   
 
     .blog-post-1-copy {
         padding: 240px 150px 10px 0px;
@@ -35,13 +44,34 @@
 
 // MAX-WIDTH 2900PX ==========================
 
-@media (max-width: 2900px) and (min-height: 2160px) {
+@media (max-width: 2900px) and (min-height: 1800px) {
     html {
         font-size: 150%;
     }
     
     .wrapper {
         max-width: 90%; 
+    }
+    .new-products,
+    .latest-exhibits,
+    .about,
+    footer {
+        padding: 200px 0;
+    }
+
+    .new-products {
+        img {
+            margin-right: 80px;
+            width: calc(30% - 80px);
+        }
+    }   
+
+    .blog-post-1-copy {
+        padding: 200px 150px 10px 0px;
+    }
+
+    .blog-post-2-copy {
+        padding: 200px 0px 5px 150px;
     }
 
 }
@@ -89,13 +119,11 @@
 // MAX-WIDTH 990PX ====================
 
 @media (max-width: 990px) {
-    // header {
-    //     .animated {
-    //         animation: static;
-    //         animation-duration: 0;
-    //         animation-delay: 0;
-    //     }
-    // }
+    header {
+        .animated {
+            animation: none;
+        }
+    }
 
     .new-products {
         text-align: center;
