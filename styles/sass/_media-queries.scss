@@ -1,0 +1,170 @@
+// MEDIA QUERIES ===============
+
+// RESPONSIVE BACKGROUND IMAGE MAY NEED TO BE RESIZED
+// BACKGROUND IMAGE PROBABLY NEED @MIN/MAX SCREEN SIZE CSS
+// TAKE OFF ANIMATE CSS
+// NEED TO TAKE INTO ACCOUNT HEIGHT AND ORIENTATION MEDIA QUERIES
+// HIDE NAV MENU INSERT HANBURGER MENU
+
+
+
+// MAX-WIDTH 1120PX ==========================
+
+@media (max-width: 1120px) { 
+        h1 {
+            font-size: 11rem;
+        }
+
+        h2 {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+
+        p,
+        a,
+        input.email-address,
+        ::placeholder,
+        legend {
+            color: $color-1;
+            font-family: $font-2;
+            font-size: 1.5rem;
+            line-height: 2.9rem;
+            letter-spacing: 0.02rem;
+        }
+
+        .button-1 a,
+        .button-2 a,
+        button {
+            font-size: 3rem;
+        }
+
+}
+
+// MAX-WIDTH 990PX ====================
+
+@media (max-width: 990px) {
+
+    .new-products {
+        
+        img,
+        .new-products-copy {
+            display: block;
+            margin: 0 auto; 
+        }       
+        
+        img {
+            float: none;
+        }
+
+        .new-products-copy {
+            width: 100%;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .read-more {
+        text-align: center;
+            margin: 0 auto;   
+        }
+
+    }
+    
+    .blog-post-1 {
+        padding: 80px 5px 20px 5px;
+    }
+    
+    
+    .blog-post-2 {
+        padding: 20px 5px 80px 5px;
+    }
+
+    .blog-post-1-image,
+    .blog-post-1-copy,
+    .blog-post-2-image,
+    .blog-post-2-copy {
+        display: block;
+        float: none;
+        margin: 0 auto;    
+    }
+
+    .blog-post-1-copy,
+    .blog-post-2-copy {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 20px 5px;
+    }
+}
+
+// MAX-WIDTH 885 PX ===============
+
+@media (max-width: 885px) {
+    .footer-links,
+    .email,
+    .contact {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.footer-links {
+        margin: 0;
+
+            li { 
+                display: inline-block;
+                margin: 0 10px 20px 10px;
+            }
+    }
+  
+    .email { 
+        input.email-address {
+            float: none;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        .sub-button {
+            float: none;
+            width: auto;
+        }
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+}
+
+// MAX-WIDTH 650PX ======================
+
+@media (max-width: 650px) {
+    .nav-links{
+        display: none;
+    }
+    
+    .exhibits img {
+
+    }
+
+    .sub-footer {
+        padding: 5px 0;
+    }
+
+}
+
+
+
+
+
+
+// MAX-WIDTH 320PX =======================
+
+@media (max-width: 320px) {
+
+
+
+
+}
